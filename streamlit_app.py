@@ -37,8 +37,6 @@ try:
 except URLError as e:
   streamlit.error()
 
-streamlit.stop()
-
 #import snowflake.connector
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
